@@ -1,0 +1,324 @@
+{
+  "BTTPresetName": "Factorio Rich Text",
+  "BTTPresetCreatorNotes": "Ctrl+Option+Cmd+R opens the Factorio rich-text menu at the mouse. Type to filter, arrows/Tab to move, Return to insert. Orange buttons open an icon picker (run factorio-richtext-setup.sh once to export Factorio's icons).",
+  "BTTPresetInfoURL": "https://wiki.factorio.com/Rich_text",
+  "BTTPresetColor": "227, 141, 0, 255",
+  "BTTPresetUUID": "7253ECE5-5437-4A0B-A069-28CBE2C18303",
+  "BTTPresetContent": [
+    {
+      "BTTAppBundleIdentifier": "BT.G",
+      "BTTAppName": "Global",
+      "BTTAppAutoInvertIcon": 1,
+      "BTTTriggers": [
+        {
+          "BTTTriggerType": 767,
+          "BTTTriggerTypeDescriptionReadOnly": "Floating Menu",
+          "BTTTriggerClass": "BTTTriggerTypeFloatingMenu",
+          "BTTUUID": "02299DF4-C8AB-4FA1-A1B1-A4B5DCCB8ED0",
+          "BTTEnabled": 1,
+          "BTTOrder": 0,
+          "BTTTriggerName": "Floating Menu: Factorio Rich Text",
+          "BTTMenuName": "Factorio Rich Text",
+          "BTTMenuAvailability": 0,
+          "BTTMenuConfig": {
+            "BTTMenuVisibility": 1,
+            "BTTMenuPositioningType": 1,
+            "BTTMenuPositionRelativeTo": 7,
+            "BTTMenuAnchorMenu": 4,
+            "BTTMenuAnchorRelation": 4,
+            "BTTMenuSizingBehavior": 1,
+            "BTTMenuFrameWidth": 720,
+            "BTTMenuFrameHeight": 356,
+            "BTTMenuLayoutDirection": 6,
+            "BTTMenuWindowLevel": 3,
+            "BTTMenuCloseOnOutsideClick": 1,
+            "BTTMenuDisableDrag": 1,
+            "BTTMenuAllowScrolling": 0,
+            "BTTMenuItemBackgroundType": 4,
+            "BTTMenuItemBackgroundColor": "28, 28, 28, 255",
+            "BTTMenuItemCornerRadius": 10,
+            "BTTMenuItemBorderWidth": 1,
+            "BTTMenuItemBorderColor": "90, 90, 90, 255",
+            "BTTMenuItemPaddingLeft": 0,
+            "BTTMenuItemPaddingRight": 0,
+            "BTTMenuItemPaddingTop": 0,
+            "BTTMenuItemPaddingBottom": 0
+          },
+          "BTTMenuItems": [
+            {
+              "BTTTriggerType": 778,
+              "BTTTriggerClass": "BTTTriggerTypeFloatingMenu",
+              "BTTUUID": "3F5FD898-A40A-4B67-AE88-34EE0C1EB33E",
+              "BTTEnabled": 1,
+              "BTTOrder": 0,
+              "BTTTriggerName": "Menu Item: Palette",
+              "BTTMenuName": "Palette",
+              "BTTMenuAvailability": 0,
+              "BTTMenuConfig": {
+                "BTTMenuItemVisibleWhileActive": 1,
+                "BTTMenuItemVisibleWhileInactive": 1,
+                "BTTMenuItemMinWidth": 720,
+                "BTTMenuItemMaxWidth": 720,
+                "BTTMenuItemMinHeight": 356,
+                "BTTMenuItemMaxHeight": 356,
+                "BTTMenuItemPaddingLeft": 0,
+                "BTTMenuItemPaddingRight": 0,
+                "BTTMenuItemPaddingTop": 0,
+                "BTTMenuItemPaddingBottom": 0,
+                "BTTMenuItemCornerRadius": 10,
+                "BTTMenuItemText": "<!doctype html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n  :root { color-scheme: dark; }\n  * { box-sizing: border-box; }\n  html, body { margin: 0; height: 100%; background: #1c1c1c; color: #e6e6e6; overflow: hidden;\n    font: 12px -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", sans-serif; }\n  #wrap { display: flex; flex-direction: column; height: 100%; }\n  #top { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-bottom: 1px solid #333; }\n  #q { flex: 1; min-width: 0; background: #2a2a2a; border: 1px solid #444; border-radius: 6px; color: #fff;\n    padding: 5px 8px; font-size: 13px; outline: none; }\n  #q:focus { border-color: #c48428; }\n  #grid { flex: 1; overflow-y: auto; padding: 6px 10px; }\n  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 4px; }\n  .row.hidden, .b.hidden { display: none; }\n  .h { width: 62px; flex: none; color: #8a8a8a; font-size: 10px; }\n  .b { height: 22px; padding: 0 6px; border-radius: 5px; background: #3a3938; color: #ececec;\n    font: 11px Menlo, monospace; white-space: nowrap; border: 1px solid transparent; cursor: default; flex: none;\n    display: inline-flex; align-items: center; }\n  .b.pk { border-color: #c48428; }\n  .b.sw { width: 24px; padding: 0; border-color: #787878; }\n  .b.sel { background: #7a5520; border-color: #ffd28a; box-shadow: 0 0 0 1px #ffd28a; }\n  .b.sw.sel { box-shadow: 0 0 0 2px #ffd28a; }\n  #foot { border-top: 1px solid #333; padding: 6px 10px; display: flex; gap: 10px; align-items: center; min-height: 30px; }\n  #pv { flex: 1; min-width: 0; font: 11px Menlo, monospace; color: #e0a040; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }\n  #pv .tip { font: 11px -apple-system, sans-serif; color: #9a9a9a; margin-left: 8px; }\n  #pv .caret { color: #fff; }\n  #keys { color: #8a8a8a; font-size: 10px; white-space: nowrap; }\n  kbd { font: 10px Menlo, monospace; background: #333; border-radius: 3px; padding: 0 3px; color: #ccc; }\n  #none { color: #777; padding: 10px 2px; display: none; }\n</style>\n</head>\n<body>\n<div id=\"wrap\">\n  <div id=\"top\"><input id=\"q\" type=\"text\" autofocus spellcheck=\"false\" autocomplete=\"off\"\n    placeholder=\"Type to filter (item, red, bold, gleba, rare...)  -  arrows to move, return to insert\"></div>\n  <div id=\"grid\"></div>\n  <div id=\"foot\"><div id=\"pv\"></div><div id=\"keys\"><kbd>↩</kbd> insert <kbd>←↑↓→</kbd> <kbd>⇥</kbd> move <kbd>esc</kbd> close</div></div>\n</div>\n<script>\nconst ROWS = [{\"header\": \"objects\", \"buttons\": [{\"label\": \"[item=]\", \"paste\": \"[item=]\", \"left\": 1, \"tip\": \"Item icon + name. Type the internal name, e.g. iron-plate\", \"color\": null, \"picker\": {\"tag\": \"item\", \"folders\": [\"item\"], \"quality\": true, \"img\": false, \"template\": \"[item=]\", \"left\": 1}}, {\"label\": \"[entity=]\", \"paste\": \"[entity=]\", \"left\": 1, \"tip\": \"Entity, e.g. small-biter\", \"color\": null, \"picker\": {\"tag\": \"entity\", \"folders\": [\"entity\"], \"quality\": true, \"img\": false, \"template\": \"[entity=]\", \"left\": 1}}, {\"label\": \"[recipe=]\", \"paste\": \"[recipe=]\", \"left\": 1, \"tip\": \"Recipe, e.g. basic-oil-processing\", \"color\": null, \"picker\": {\"tag\": \"recipe\", \"folders\": [\"recipe\"], \"quality\": true, \"img\": false, \"template\": \"[recipe=]\", \"left\": 1}}, {\"label\": \"[technology=]\", \"paste\": \"[technology=]\", \"left\": 1, \"tip\": \"Technology, e.g. logistics\", \"color\": null, \"picker\": {\"tag\": \"technology\", \"folders\": [\"technology\"], \"quality\": false, \"img\": false, \"template\": \"[technology=]\", \"left\": 1}}, {\"label\": \"[fluid=]\", \"paste\": \"[fluid=]\", \"left\": 1, \"tip\": \"Fluid, e.g. water\", \"color\": null, \"picker\": {\"tag\": \"fluid\", \"folders\": [\"fluid\"], \"quality\": true, \"img\": false, \"template\": \"[fluid=]\", \"left\": 1}}, {\"label\": \"[tile=]\", \"paste\": \"[tile=]\", \"left\": 1, \"tip\": \"Tile, e.g. grass-3\", \"color\": null, \"picker\": {\"tag\": \"tile\", \"folders\": [\"tile\"], \"quality\": false, \"img\": false, \"template\": \"[tile=]\", \"left\": 1}}]}, {\"header\": \"icons\", \"buttons\": [{\"label\": \"[img=]\", \"paste\": \"[img=]\", \"left\": 1, \"tip\": \"Icon only: class/name (item/iron-plate) or a sprite name\", \"color\": null, \"picker\": {\"tag\": \"img\", \"folders\": [\"item\", \"entity\", \"technology\", \"recipe\", \"fluid\", \"tile\", \"item-group\", \"virtual-signal\", \"shortcut\", \"achievement\", \"equipment\", \"ammo-category\", \"decorative\", \"space-connection\", \"space-location\", \"surface\", \"airborne-pollutant\", \"asteroid-chunk\", \"quality\"], \"quality\": false, \"img\": true, \"template\": \"[img=]\", \"left\": 1}}, {\"label\": \"[virtual-signal=]\", \"paste\": \"[virtual-signal=]\", \"left\": 1, \"tip\": \"Virtual signal, e.g. signal-A\", \"color\": null, \"picker\": {\"tag\": \"virtual-signal\", \"folders\": [\"virtual-signal\"], \"quality\": true, \"img\": false, \"template\": \"[virtual-signal=]\", \"left\": 1}}, {\"label\": \"[item-group=]\", \"paste\": \"[item-group=]\", \"left\": 1, \"tip\": \"logistics, production, intermediate-products, combat, fluids, signals\", \"color\": null, \"picker\": {\"tag\": \"item-group\", \"folders\": [\"item-group\"], \"quality\": false, \"img\": false, \"template\": \"[item-group=]\", \"left\": 1}}, {\"label\": \"[achievement=]\", \"paste\": \"[achievement=]\", \"left\": 1, \"tip\": \"Achievement, e.g. minions\", \"color\": null, \"picker\": {\"tag\": \"achievement\", \"folders\": [\"achievement\"], \"quality\": false, \"img\": false, \"template\": \"[achievement=]\", \"left\": 1}}, {\"label\": \"[shortcut=]\", \"paste\": \"[shortcut=]\", \"left\": 1, \"tip\": \"Shortcut bar entry, e.g. give-spidertron-remote\", \"color\": null, \"picker\": {\"tag\": \"shortcut\", \"folders\": [\"shortcut\"], \"quality\": false, \"img\": false, \"template\": \"[shortcut=]\", \"left\": 1}}, {\"label\": \"[tip=]\", \"paste\": \"[tip=]\", \"left\": 1, \"tip\": \"Tips-and-tricks entry, e.g. spidertron-control\", \"color\": null}]}, {\"header\": \"links\", \"buttons\": [{\"label\": \"[gps=]\", \"paste\": \"[gps=]\", \"left\": 1, \"tip\": \"Map ping: x,y  or  x,y,surface\", \"color\": null}, {\"label\": \"[train=]\", \"paste\": \"[train=]\", \"left\": 1, \"tip\": \"Train unit number\", \"color\": null}, {\"label\": \"[train-stop=]\", \"paste\": \"[train-stop=]\", \"left\": 1, \"tip\": \"Train stop unit number\", \"color\": null}, {\"label\": \"[space-platform=]\", \"paste\": \"[space-platform=]\", \"left\": 1, \"tip\": \"Space platform index (starts at 1)\", \"color\": null}, {\"label\": \"[armor=]\", \"paste\": \"[armor=]\", \"left\": 1, \"tip\": \"Player name: shows their armor\", \"color\": null}, {\"label\": \"[special-item=]\", \"paste\": \"[special-item=]\", \"left\": 1, \"tip\": \"Paste a blueprint / planner string here\", \"color\": null}]}, {\"header\": \"text\", \"buttons\": [{\"label\": \"[color=][/color]\", \"paste\": \"[color=][/color]\", \"left\": 9, \"tip\": \"Type a colour name, r,g,b (0-1 or 0-255) or #rrggbb, press Right, then the text\", \"color\": null}, {\"label\": \"[/color]\", \"paste\": \"[/color]\", \"left\": 0, \"tip\": \"Closing tag\", \"color\": null}, {\"label\": \"[font=][/font]\", \"paste\": \"[font=][/font]\", \"left\": 8, \"tip\": \"Type the font name, press Right, then the text\", \"color\": null}, {\"label\": \"[/font]\", \"paste\": \"[/font]\", \"left\": 0, \"tip\": \"Closing tag\", \"color\": null}, {\"label\": \"[tooltip=,]\", \"paste\": \"[tooltip=,]\", \"left\": 2, \"tip\": \"text,locale-key  e.g. Hover me,item-name.iron-plate\", \"color\": null}]}, {\"header\": \"colors\", \"buttons\": [{\"label\": \"default\", \"paste\": \"[color=default][/color]\", \"left\": 8, \"tip\": \"[color=default]...[/color], cursor lands inside\", \"color\": null}, {\"label\": \"red\", \"paste\": \"[color=red][/color]\", \"left\": 8, \"tip\": \"red: [color=red]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"235, 60, 60\"}, {\"label\": \"green\", \"paste\": \"[color=green][/color]\", \"left\": 8, \"tip\": \"green: [color=green]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"60, 200, 60\"}, {\"label\": \"blue\", \"paste\": \"[color=blue][/color]\", \"left\": 8, \"tip\": \"blue: [color=blue]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"70, 120, 255\"}, {\"label\": \"orange\", \"paste\": \"[color=orange][/color]\", \"left\": 8, \"tip\": \"orange: [color=orange]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"255, 150, 30\"}, {\"label\": \"yellow\", \"paste\": \"[color=yellow][/color]\", \"left\": 8, \"tip\": \"yellow: [color=yellow]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"255, 220, 50\"}, {\"label\": \"pink\", \"paste\": \"[color=pink][/color]\", \"left\": 8, \"tip\": \"pink: [color=pink]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"255, 120, 180\"}, {\"label\": \"purple\", \"paste\": \"[color=purple][/color]\", \"left\": 8, \"tip\": \"purple: [color=purple]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"170, 90, 255\"}, {\"label\": \"white\", \"paste\": \"[color=white][/color]\", \"left\": 8, \"tip\": \"white: [color=white]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"255, 255, 255\"}, {\"label\": \"black\", \"paste\": \"[color=black][/color]\", \"left\": 8, \"tip\": \"black: [color=black]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"0, 0, 0\"}, {\"label\": \"gray\", \"paste\": \"[color=gray][/color]\", \"left\": 8, \"tip\": \"gray: [color=gray]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"150, 150, 150\"}, {\"label\": \"brown\", \"paste\": \"[color=brown][/color]\", \"left\": 8, \"tip\": \"brown: [color=brown]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"160, 105, 55\"}, {\"label\": \"cyan\", \"paste\": \"[color=cyan][/color]\", \"left\": 8, \"tip\": \"cyan: [color=cyan]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"50, 220, 220\"}, {\"label\": \"acid\", \"paste\": \"[color=acid][/color]\", \"left\": 8, \"tip\": \"acid: [color=acid]...[/color], cursor lands inside\", \"color\": null, \"swatch\": \"180, 255, 40\"}]}, {\"header\": \"fonts\", \"buttons\": [{\"label\": \"default-bold\", \"paste\": \"[font=default-bold][/font]\", \"left\": 7, \"tip\": \"[font=default-bold]...[/font], cursor lands inside\", \"color\": null}, {\"label\": \"default-large-bold\", \"paste\": \"[font=default-large-bold][/font]\", \"left\": 7, \"tip\": \"[font=default-large-bold]...[/font], cursor lands inside\", \"color\": null}, {\"label\": \"heading-1\", \"paste\": \"[font=heading-1][/font]\", \"left\": 7, \"tip\": \"[font=heading-1]...[/font], cursor lands inside\", \"color\": null}]}, {\"header\": \"space\", \"buttons\": [{\"label\": \"[planet=]\", \"paste\": \"[planet=]\", \"left\": 1, \"tip\": \"nauvis, vulcanus, gleba, fulgora, aquilo\", \"color\": null, \"picker\": {\"tag\": \"planet\", \"folders\": [\"space-location\"], \"quality\": false, \"img\": false, \"template\": \"[planet=]\", \"left\": 1}}, {\"label\": \"[space-location=]\", \"paste\": \"[space-location=]\", \"left\": 1, \"tip\": \"Any space location, e.g. shattered-planet\", \"color\": null, \"picker\": {\"tag\": \"space-location\", \"folders\": [\"space-location\"], \"quality\": false, \"img\": false, \"template\": \"[space-location=]\", \"left\": 1}}, {\"label\": \"[quality=]\", \"paste\": \"[quality=]\", \"left\": 1, \"tip\": \"Quality icon: uncommon, rare, epic, legendary\", \"color\": null, \"picker\": {\"tag\": \"quality\", \"folders\": [\"quality\"], \"quality\": false, \"img\": false, \"template\": \"[quality=]\", \"left\": 1}}, {\"label\": \"[space-age]\", \"paste\": \"[space-age]\", \"left\": 0, \"tip\": \"Space Age logo\", \"color\": null}]}, {\"header\": \"planets\", \"buttons\": [{\"label\": \"nauvis\", \"paste\": \"[planet=nauvis]\", \"left\": 0, \"tip\": \"[planet=nauvis]\", \"color\": null}, {\"label\": \"vulcanus\", \"paste\": \"[planet=vulcanus]\", \"left\": 0, \"tip\": \"[planet=vulcanus]\", \"color\": null}, {\"label\": \"gleba\", \"paste\": \"[planet=gleba]\", \"left\": 0, \"tip\": \"[planet=gleba]\", \"color\": null}, {\"label\": \"fulgora\", \"paste\": \"[planet=fulgora]\", \"left\": 0, \"tip\": \"[planet=fulgora]\", \"color\": null}, {\"label\": \"aquilo\", \"paste\": \"[planet=aquilo]\", \"left\": 0, \"tip\": \"[planet=aquilo]\", \"color\": null}, {\"label\": \"solar-system-edge\", \"paste\": \"[space-location=solar-system-edge]\", \"left\": 0, \"tip\": \"[space-location=solar-system-edge]\", \"color\": null}, {\"label\": \"shattered-planet\", \"paste\": \"[space-location=shattered-planet]\", \"left\": 0, \"tip\": \"[space-location=shattered-planet]\", \"color\": null}]}, {\"header\": \"+quality\", \"buttons\": [{\"label\": \"uncommon\", \"paste\": \",quality=uncommon\", \"left\": 0, \"tip\": \"Appends ,quality=uncommon - use while the cursor is still inside an item/entity/recipe/fluid/signal tag\", \"color\": \"#4fd34f\"}, {\"label\": \"rare\", \"paste\": \",quality=rare\", \"left\": 0, \"tip\": \"Appends ,quality=rare - use while the cursor is still inside an item/entity/recipe/fluid/signal tag\", \"color\": \"#4f8cff\"}, {\"label\": \"epic\", \"paste\": \",quality=epic\", \"left\": 0, \"tip\": \"Appends ,quality=epic - use while the cursor is still inside an item/entity/recipe/fluid/signal tag\", \"color\": \"#b14fff\"}, {\"label\": \"legendary\", \"paste\": \",quality=legendary\", \"left\": 0, \"tip\": \"Appends ,quality=legendary - use while the cursor is still inside an item/entity/recipe/fluid/signal tag\", \"color\": \"#ff9f1c\"}]}, {\"header\": \"signals\", \"buttons\": [{\"label\": \"signal-?\", \"paste\": \"[virtual-signal=signal-]\", \"left\": 1, \"tip\": \"Type A-Z, 0-9 or a colour (red, green, ...)\", \"color\": null}, {\"label\": \"each\", \"paste\": \"[virtual-signal=signal-each]\", \"left\": 0, \"tip\": \"[virtual-signal=signal-each]\", \"color\": null}, {\"label\": \"everything\", \"paste\": \"[virtual-signal=signal-everything]\", \"left\": 0, \"tip\": \"[virtual-signal=signal-everything]\", \"color\": null}, {\"label\": \"anything\", \"paste\": \"[virtual-signal=signal-anything]\", \"left\": 0, \"tip\": \"[virtual-signal=signal-anything]\", \"color\": null}]}];\nconst $ = (id) => document.getElementById(id);\nconst norm = (s) => String(s).normalize(\"NFD\").replace(/[̀-ͯ]/g, \"\").toLowerCase();\nconst esc = (s) => String(s).replace(/[&<>\"]/g, (c) => ({ \"&\": \"&amp;\", \"<\": \"&lt;\", \">\": \"&gt;\", '\"': \"&quot;\" }[c]));\n\n// ---- BTT bridge -------------------------------------------------------------\nfunction bttCall(fn, args) {\n  try { if (typeof window[fn] === \"function\") return window[fn](args); } catch (e) {}\n  const qs = Object.keys(args).map((k) => k + \"=\" + encodeURIComponent(args[k])).join(\"&\");\n  return fetch(\"bttweb://\" + fn + \"/?\" + qs).catch(() => {});\n}\nconst named = (name) => bttCall(\"trigger_named_async_without_response\", { trigger_name: name });\n\n// ---- build ------------------------------------------------------------------\nconst BTNS = [];\n$(\"grid\").innerHTML = ROWS.map((row, r) => {\n  const cells = row.buttons.map((b, c) => {\n    const id = BTNS.length;\n    const short = norm(b.label.replace(/^\\[\\/?|=?\\]$/g, \"\").replace(/[=\\[\\]]/g, \" \").trim());\n    BTNS.push({ ...b, id, r, short, key: norm([b.label, b.paste, b.tip, row.header, b.name || \"\"].join(\" \")) });\n    const cls = \"b\" + (b.picker ? \" pk\" : \"\") + (b.swatch ? \" sw\" : \"\");\n    const style = b.swatch ? ` style=\"background:rgb(${b.swatch})\"` : (b.color ? ` style=\"color:${b.color}\"` : \"\");\n    return `<div class=\"${cls}\" data-id=\"${id}\"${style}>${b.swatch ? \"\" : esc(b.label)}</div>`;\n  }).join(\"\");\n  return `<div class=\"row\" data-r=\"${r}\"><div class=\"h\">${esc(row.header)}</div>${cells}</div>`;\n}).join(\"\") + `<div id=\"none\">Nothing matches.</div>`;\n\nconst el = (id) => $(\"grid\").querySelector(`.b[data-id=\"${id}\"]`);\nlet sel = 0;\n\n// ---- filter -----------------------------------------------------------------\nfunction visible() { return BTNS.filter((b) => !el(b.id).classList.contains(\"hidden\")); }\n\nfunction applyFilter() {\n  const words = norm($(\"q\").value).split(/\\s+/).filter(Boolean);\n  let best = null, bestScore = 9;\n  for (const b of BTNS) {\n    const ok = words.every((w) => b.key.includes(w));\n    el(b.id).classList.toggle(\"hidden\", !ok);\n    if (ok && words.length) {\n      const w = words.join(\" \");\n      const s = b.short === w ? 0 : b.short.startsWith(w) ? 1 : b.short.includes(w) ? 2 : 3;\n      if (s < bestScore) { bestScore = s; best = b; }\n    }\n  }\n  for (const row of $(\"grid\").querySelectorAll(\".row\")) {\n    row.classList.toggle(\"hidden\", !row.querySelector(\".b:not(.hidden)\"));\n  }\n  const vis = visible();\n  $(\"none\").style.display = vis.length ? \"none\" : \"block\";\n  select(best ? best.id : (vis[0] ? vis[0].id : -1));\n}\n\n// ---- selection & navigation ---------------------------------------------------\nfunction select(id) {\n  const old = $(\"grid\").querySelector(\".b.sel\");\n  if (old) old.classList.remove(\"sel\");\n  sel = id;\n  if (id < 0) { $(\"pv\").innerHTML = \"\"; return; }\n  const e = el(id);\n  e.classList.add(\"sel\");\n  e.scrollIntoView({ block: \"nearest\" });\n  const b = BTNS[id];\n  const pv = b.picker\n    ? esc(b.label) + `<span class=\"tip\">opens the icon picker${b.picker.quality ? \" (quality optional)\" : \"\"}</span>`\n    : esc(b.paste.slice(0, b.paste.length - b.left)) + '<span class=\"caret\">|</span>' +\n      esc(b.paste.slice(b.paste.length - b.left)) + `<span class=\"tip\">${esc(b.tip)}</span>`;\n  $(\"pv\").innerHTML = pv;\n}\n\nfunction rowsVisible() {\n  const rows = [];\n  for (const b of visible()) { (rows[b.r] = rows[b.r] || []).push(b); }\n  return rows.filter(Boolean);\n}\nconst centerX = (b) => { const r = el(b.id).getBoundingClientRect(); return r.left + r.width / 2; };\n\nfunction move(dx, dy) {\n  const rows = rowsVisible();\n  if (!rows.length) return;\n  let ri = rows.findIndex((r) => r.some((b) => b.id === sel));\n  if (ri < 0) { select(rows[0][0].id); return; }\n  const row = rows[ri], ci = row.findIndex((b) => b.id === sel);\n  if (dx) {\n    const flat = rows.flat(), i = flat.findIndex((b) => b.id === sel);\n    select(flat[(i + dx + flat.length) % flat.length].id);   // wraps to next/previous row\n  } else {\n    const target = rows[(ri + dy + rows.length) % rows.length];\n    const x = centerX(row[ci]);\n    let best = target[0];\n    for (const b of target) if (Math.abs(centerX(b) - x) < Math.abs(centerX(best) - x)) best = b;\n    select(best.id);\n  }\n}\n\n// ---- actions ------------------------------------------------------------------\nasync function activate(id) {\n  const b = BTNS[id];\n  if (!b) return;\n  if (b.picker) {\n    await bttCall(\"set_string_variable\", { variable_name: \"frt_cfg\", to: JSON.stringify(b.picker) });\n    named(\"FRT Open Picker\");\n  } else {\n    await bttCall(\"set_string_variable\", { variable_name: \"frt_paste\", to: b.paste });\n    await bttCall(\"set_string_variable\", { variable_name: \"frt_left\", to: String(b.left || 0) });\n    named(\"FRT Paste\");\n  }\n}\n\n// ---- events -------------------------------------------------------------------\n$(\"q\").addEventListener(\"input\", applyFilter);\ndocument.addEventListener(\"keydown\", (ev) => {\n  const k = ev.key;\n  if (document.activeElement !== $(\"q\") && k.length === 1 && !ev.metaKey && !ev.ctrlKey) $(\"q\").focus();\n  if (k === \"ArrowRight\") { move(1, 0); ev.preventDefault(); }\n  else if (k === \"ArrowLeft\") { move(-1, 0); ev.preventDefault(); }\n  else if (k === \"ArrowDown\") { move(0, 1); ev.preventDefault(); }\n  else if (k === \"ArrowUp\") { move(0, -1); ev.preventDefault(); }\n  else if (k === \"Tab\") { move(ev.shiftKey ? -1 : 1, 0); ev.preventDefault(); }\n  else if (k === \"Enter\") { ev.preventDefault(); if (sel >= 0) activate(sel); }\n  else if (k === \"Escape\") {\n    ev.preventDefault();\n    if ($(\"q\").value) { $(\"q\").value = \"\"; applyFilter(); } else named(\"FRT Close\");\n  }\n});\n$(\"grid\").addEventListener(\"mousedown\", (ev) => ev.preventDefault());   // keep the caret in the filter box\n$(\"grid\").addEventListener(\"mousemove\", (ev) => {\n  const b = ev.target.closest(\".b\");\n  if (b && Number(b.dataset.id) !== sel) select(Number(b.dataset.id));\n});\n$(\"grid\").addEventListener(\"click\", (ev) => {\n  const b = ev.target.closest(\".b\");\n  if (b) activate(Number(b.dataset.id));\n});\n\nfunction reset() { $(\"q\").value = \"\"; applyFilter(); select(0); try { $(\"q\").focus(); } catch (e) {} }\nreset();\nfunction BTTInitialize() { reset(); }\nfunction BTTWindowWillBecomeVisible() { reset(); }\n</script>\n</body>\n</html>\n",
+                "BTTMenuItemWebViewPlain": 0,
+                "BTTMenuItemWebViewFocusTextField": 1,
+                "BTTMenuItemKeepActiveInBackground": 0
+              }
+            }
+          ]
+        },
+        {
+          "BTTTriggerType": 0,
+          "BTTTriggerClass": "BTTTriggerTypeKeyboardShortcut",
+          "BTTTriggerTypeDescription": "Toggle Factorio Rich Text menu",
+          "BTTUUID": "01A20375-221D-4203-B8B1-1739E5A3D4AF",
+          "BTTEnabled": 1,
+          "BTTEnabled2": 1,
+          "BTTOrder": 1,
+          "BTTTriggerOnDown": 1,
+          "BTTShortcutKeyCode": 15,
+          "BTTShortcutModifierKeys": 1835008,
+          "BTTLayoutIndependentChar": "r",
+          "BTTAutoAdaptToKeyboardLayout": 0,
+          "BTTActionsToExecute": [
+            {
+              "BTTPredefinedActionType": 388,
+              "BTTPredefinedActionName": "Toggle Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "02299DF4-C8AB-4FA1-A1B1-A4B5DCCB8ED0",
+                "BTTMenuActionMenuName": "Factorio Rich Text",
+                "BTTMenuActionActivateKeyboardFocus": 2,
+                "BTTMenuActionRestorePosition": true
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 0
+            }
+          ]
+        },
+        {
+          "BTTTriggerType": 767,
+          "BTTTriggerTypeDescriptionReadOnly": "Floating Menu",
+          "BTTTriggerClass": "BTTTriggerTypeFloatingMenu",
+          "BTTUUID": "AA1E1558-D457-48F4-BC2E-799A378CDC64",
+          "BTTEnabled": 1,
+          "BTTOrder": 2,
+          "BTTTriggerName": "Floating Menu: FRT Picker",
+          "BTTMenuName": "FRT Picker",
+          "BTTMenuAvailability": 0,
+          "BTTMenuConfig": {
+            "BTTMenuVisibility": 1,
+            "BTTMenuPositioningType": 1,
+            "BTTMenuPositionRelativeTo": 7,
+            "BTTMenuAnchorMenu": 4,
+            "BTTMenuAnchorRelation": 4,
+            "BTTMenuSizingBehavior": 1,
+            "BTTMenuFrameWidth": 500,
+            "BTTMenuFrameHeight": 440,
+            "BTTMenuLayoutDirection": 6,
+            "BTTMenuWindowLevel": 3,
+            "BTTMenuCloseOnOutsideClick": 1,
+            "BTTMenuDisableDrag": 1,
+            "BTTMenuAllowScrolling": 0,
+            "BTTMenuItemBackgroundType": 4,
+            "BTTMenuItemBackgroundColor": "28, 28, 28, 255",
+            "BTTMenuItemCornerRadius": 10,
+            "BTTMenuItemBorderWidth": 1,
+            "BTTMenuItemBorderColor": "90, 90, 90, 255",
+            "BTTMenuItemPaddingLeft": 0,
+            "BTTMenuItemPaddingRight": 0,
+            "BTTMenuItemPaddingTop": 0,
+            "BTTMenuItemPaddingBottom": 0
+          },
+          "BTTMenuItems": [
+            {
+              "BTTTriggerType": 778,
+              "BTTTriggerClass": "BTTTriggerTypeFloatingMenu",
+              "BTTUUID": "DC119C3A-C484-4D56-8B9A-92EB29550B58",
+              "BTTEnabled": 1,
+              "BTTOrder": 0,
+              "BTTTriggerName": "Menu Item: Picker",
+              "BTTMenuName": "Picker",
+              "BTTMenuAvailability": 0,
+              "BTTMenuConfig": {
+                "BTTMenuItemVisibleWhileActive": 1,
+                "BTTMenuItemVisibleWhileInactive": 1,
+                "BTTMenuItemMinWidth": 500,
+                "BTTMenuItemMaxWidth": 500,
+                "BTTMenuItemMinHeight": 440,
+                "BTTMenuItemMaxHeight": 440,
+                "BTTMenuItemPaddingLeft": 0,
+                "BTTMenuItemPaddingRight": 0,
+                "BTTMenuItemPaddingTop": 0,
+                "BTTMenuItemPaddingBottom": 0,
+                "BTTMenuItemCornerRadius": 10,
+                "BTTMenuItemText": "<!doctype html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<style>\n  :root { color-scheme: dark; }\n  * { box-sizing: border-box; }\n  html, body { margin: 0; height: 100%; background: #1d1d1d; color: #e6e6e6;\n    font: 13px -apple-system, BlinkMacSystemFont, \"Helvetica Neue\", sans-serif; overflow: hidden; }\n  #wrap { display: flex; flex-direction: column; height: 100%; }\n  #top { display: flex; align-items: center; gap: 8px; padding: 10px 10px 8px; border-bottom: 1px solid #333; }\n  #tag { font: 12px Menlo, monospace; color: #e0a040; white-space: nowrap; }\n  #q { flex: 1; min-width: 0; background: #2a2a2a; border: 1px solid #444; border-radius: 6px; color: #fff;\n    padding: 6px 8px; font-size: 14px; outline: none; }\n  #q:focus { border-color: #c48428; }\n  #list { flex: 1; overflow-y: auto; padding: 4px 0; }\n  .row { display: flex; align-items: center; gap: 8px; height: 32px; padding: 0 10px; cursor: default; }\n  .row.sel { background: #4a3818; }\n  .ic { width: 26px; height: 26px; object-fit: contain; flex: none; }\n  .ic.missing { visibility: hidden; }\n  .t { flex: 1; min-width: 0; display: flex; align-items: baseline; gap: 8px; overflow: hidden; white-space: nowrap; }\n  .n { overflow: hidden; text-overflow: ellipsis; }\n  .id { color: #8a8a8a; font: 11px Menlo, monospace; overflow: hidden; text-overflow: ellipsis; }\n  .qs { display: flex; gap: 2px; flex: none; }\n  .qb { width: 24px; height: 24px; padding: 2px; border-radius: 5px; border: 1px solid transparent;\n    display: flex; align-items: center; justify-content: center; opacity: .55; font: 9px Menlo, monospace; color: #ccc; }\n  .qb img { width: 18px; height: 18px; object-fit: contain; }\n  .row:hover .qb, .row.sel .qb { opacity: .9; }\n  .qb:hover { opacity: 1; background: #5c4520; border-color: #c48428; }\n  .qb.on { opacity: 1; background: #6b4f1f; border-color: #f0a830; }\n  .manual .n { color: #bbb; font-style: italic; }\n  .manual .id { color: #e0a040; }\n  #more { color: #777; padding: 6px 10px; font-size: 12px; }\n  #foot { border-top: 1px solid #333; padding: 6px 10px; color: #8a8a8a; font-size: 11px; white-space: nowrap;\n    overflow: hidden; text-overflow: ellipsis; }\n  kbd { font: 10px Menlo, monospace; background: #333; border-radius: 3px; padding: 0 4px; color: #ccc; }\n</style>\n</head>\n<body>\n<div id=\"wrap\">\n  <div id=\"top\"><span id=\"tag\"></span><input id=\"q\" type=\"text\" autofocus spellcheck=\"false\" autocomplete=\"off\" placeholder=\"Search name or internal name\"></div>\n  <div id=\"list\"></div>\n  <div id=\"foot\"></div>\n</div>\n<script>\nlet DATA = null;\nconst MAX_ROWS = 150;\n\nconst $ = (id) => document.getElementById(id);\nconst norm = (s) => String(s).normalize(\"NFD\").replace(/[̀-ͯ]/g, \"\").toLowerCase();\nconst esc = (s) => String(s).replace(/[&<>\"]/g, (c) => ({ \"&\": \"&amp;\", \"<\": \"&lt;\", \">\": \"&gt;\", '\"': \"&quot;\" }[c]));\nconst icon = (folder, name) => DATA.iconBase + encodeURIComponent(folder) + \"/\" + encodeURIComponent(name) + \".png\";\n\nlet ENTRIES = [], QUALS = [];\n\nlet results = [], sel = 0, qsel = -1, query = \"\";\n\n// ---- BTT bridge -------------------------------------------------------------\nfunction bttCall(fn, args) {\n  try { if (typeof window[fn] === \"function\") return Promise.resolve(window[fn](args)); } catch (e) {}\n  const qs = Object.keys(args).map((k) => k + \"=\" + encodeURIComponent(args[k])).join(\"&\");\n  return fetch(\"bttweb://\" + fn + \"/?\" + qs).then((r) => r.text()).catch(() => \"\");\n}\nasync function insert(text, inside) {\n  await bttCall(\"set_string_variable\", { variable_name: \"frt_paste\", to: text });\n  await bttCall(\"set_string_variable\", { variable_name: \"frt_left\", to: inside ? \"1\" : \"0\" });\n  bttCall(\"trigger_named_async_without_response\", { trigger_name: \"FRT Paste\" });\n}\nfunction closePicker() { bttCall(\"trigger_named_async_without_response\", { trigger_name: \"FRT Back\" }); }\n\n// ---- search -----------------------------------------------------------------\nfunction search(q) {\n  const words = norm(q).split(/\\s+/).filter(Boolean);\n  if (!words.length) return ENTRIES.slice();\n  const out = [];\n  for (const e of ENTRIES) {\n    if (!words.every((w) => e.key.includes(w))) continue;\n    const w = words[0];\n    let s = 4;\n    if (e.nt.startsWith(w) || e.nn.startsWith(w)) s = 0;\n    else if (e.nt.includes(\" \" + w) || e.nn.includes(\"-\" + w)) s = 1;\n    else if (e.nt.includes(w) || e.nn.includes(w)) s = 2;\n    out.push([s, e]);\n  }\n  out.sort((a, b) => a[0] - b[0] || a[1].title.localeCompare(b[1].title));\n  return out.map((x) => x[1]);\n}\n\nconst tagText = (value, q) => \"[\" + DATA.tag + \"=\" + value + (q >= 0 ? \",quality=\" + QUALS[q][0] : \"\") + \"]\";\n\nfunction manualRow() {\n  const typed = query.trim();\n  return typed\n    ? { manual: true, title: \"Use as typed\", value: typed }\n    : { manual: true, title: \"Type the name yourself\", value: \"\" };\n}\n\nfunction render() {\n  if (!DATA) return;\n  const rows = results.slice(0, MAX_ROWS);\n  rows.push(manualRow());\n  const html = rows.map((e, r) => {\n    const cls = \"row\" + (r === sel ? \" sel\" : \"\") + (e.manual ? \" manual\" : \"\");\n    if (e.manual) {\n      return `<div class=\"${cls}\" data-r=\"${r}\"><span class=\"ic\"></span><div class=\"t\"><span class=\"n\">${esc(e.title)}</span>` +\n        `<span class=\"id\">${esc(\"[\" + DATA.tag + \"=\" + e.value + \"]\")}</span></div></div>`;\n    }\n    const qs = QUALS.map(([qn, qt], k) =>\n      `<span class=\"qb${r === sel && k === qsel ? \" on\" : \"\"}\" data-q=\"${k}\" title=\"${esc(qt)}  ,quality=${esc(qn)}\">` +\n      `<img src=\"${icon(\"quality\", qn)}\" alt=\"${esc(qn.slice(0, 3))}\"></span>`).join(\"\");\n    return `<div class=\"${cls}\" data-r=\"${r}\"><img class=\"ic\" loading=\"lazy\" src=\"${icon(e.folder, e.name)}\" onerror=\"this.classList.add('missing')\">` +\n      `<div class=\"t\"><span class=\"n\">${esc(e.title)}</span>${e.title !== e.value ? `<span class=\"id\">${esc(e.value)}</span>` : \"\"}</div>` +\n      (QUALS.length ? `<div class=\"qs\">${qs}</div>` : \"\") + `</div>`;\n  }).join(\"\");\n  const more = results.length > MAX_ROWS ? `<div id=\"more\">${results.length - MAX_ROWS} more, keep typing to narrow down</div>` : \"\";\n  const empty = !ENTRIES.length\n    ? `<div id=\"more\">No Factorio icons found. Quit Factorio and run factorio-richtext-setup.sh once.</div>` : \"\";\n  $(\"list\").innerHTML = empty + html + more;\n  $(\"list\").__rows = rows;\n  const s = $(\"list\").querySelector(\".row.sel\");\n  if (s) s.scrollIntoView({ block: \"nearest\" });\n}\n\nfunction choose(r, q) {\n  const e = $(\"list\").__rows[r];\n  if (!e) return;\n  if (e.manual) {\n    if (e.value) insert(\"[\" + DATA.tag + \"=\" + e.value + \"]\", false);\n    else insert(DATA.template, true);\n    return;\n  }\n  insert(tagText(e.value, q), false);\n}\n\n// ---- events -------------------------------------------------------------------\n$(\"q\").addEventListener(\"input\", () => { if (!DATA) return; query = $(\"q\").value; results = search(query); sel = 0; qsel = -1; render(); });\n\ndocument.addEventListener(\"keydown\", (ev) => {\n  if (ev.key === \"Escape\") { ev.preventDefault(); closePicker(); return; }\n  if (!DATA || !$(\"list\").__rows) return;\n  const n = $(\"list\").__rows.length;\n  const isItem = () => !$(\"list\").__rows[sel].manual && QUALS.length;\n  if (ev.key === \"ArrowDown\") { sel = Math.min(n - 1, sel + 1); qsel = -1; render(); ev.preventDefault(); }\n  else if (ev.key === \"ArrowUp\") { sel = Math.max(0, sel - 1); qsel = -1; render(); ev.preventDefault(); }\n  else if (ev.key === \"Tab\") {\n    ev.preventDefault();\n    if (!isItem()) return;\n    const m = QUALS.length + 1;                       // cycle: none -> q0 -> ... -> none\n    qsel = ((qsel + 1 + (ev.shiftKey ? -1 : 1) + m) % m) - 1;\n    render();\n  }\n  else if (ev.key === \"Enter\") { ev.preventDefault(); choose(sel, isItem() ? qsel : -1); }\n  else if (ev.key === \"Escape\") { ev.preventDefault(); closePicker(); }\n  else if (ev.metaKey && /^[1-9]$/.test(ev.key)) {\n    const k = Number(ev.key) - 1;\n    if (isItem() && k < QUALS.length) { ev.preventDefault(); choose(sel, k); }\n  }\n});\n\n// keep the caret in the search box when clicking rows\n$(\"list\").addEventListener(\"mousedown\", (ev) => ev.preventDefault());\ndocument.addEventListener(\"keydown\", (ev) => {\n  if (document.activeElement !== $(\"q\") && ev.key.length === 1 && !ev.metaKey && !ev.ctrlKey) $(\"q\").focus();\n}, true);\n\n$(\"list\").addEventListener(\"mousemove\", (ev) => {\n  const row = ev.target.closest(\".row\");\n  if (!row) return;\n  const r = Number(row.dataset.r);\n  if (r !== sel) { sel = r; qsel = -1; render(); }\n});\n$(\"list\").addEventListener(\"click\", (ev) => {\n  const row = ev.target.closest(\".row\");\n  if (!row) return;\n  const qb = ev.target.closest(\".qb\");\n  choose(Number(row.dataset.r), qb ? Number(qb.dataset.q) : -1);\n});\n\n// ---- init -----------------------------------------------------------------------\nconst sleep = (ms) => new Promise((r) => setTimeout(r, ms));\nconst focusInput = () => { try { $(\"q\").focus(); } catch (e) {} };\n\nfunction setData(d) {\n  DATA = d;\n  ENTRIES = DATA.entries.map(([folder, name, title], i) => {\n    const value = DATA.img ? folder + \"/\" + name : name;\n    return { i, folder, name, title, value,\n      key: norm(title) + \" \" + norm(name) + (DATA.img ? \" \" + folder : \"\"),\n      nt: norm(title), nn: norm(name) };\n  });\n  QUALS = DATA.quality ? DATA.qualities : [];\n  $(\"tag\").textContent = \"[\" + DATA.tag + \"=]\";\n  $(\"foot\").innerHTML = \"<kbd>↩</kbd> insert, no quality\" +\n    (QUALS.length ? \"  ·  <kbd>⇥</kbd> pick quality  ·  <kbd>⌘1</kbd>–<kbd>⌘\" + Math.min(9, QUALS.length) + \"</kbd> insert with quality\" : \"\") +\n    \"  ·  <kbd>esc</kbd> back\";\n  query = $(\"q\").value; results = search(query); sel = 0; qsel = -1;\n  render();\n  focusInput();\n}\n\nlet loading = false;\nasync function loadData() {\n  if (loading || DATA) return;\n  loading = true;\n  for (let i = 0; i < 60 && !DATA; i++) {           // up to ~6 s\n    try {\n      const raw = await bttCall(\"get_string_variable\", { variable_name: \"frt_picker_data\" });\n      if (raw && String(raw).trim().startsWith(\"{\")) { setData(JSON.parse(raw)); break; }\n    } catch (e) { /* bridge not ready yet */ }\n    await sleep(100);\n  }\n  if (!DATA) $(\"list\").innerHTML = '<div id=\"more\">Could not read the item list from BetterTouchTool (variable frt_picker_data).</div>';\n  loading = false;\n}\n\n$(\"list\").innerHTML = '<div id=\"more\">Loading...</div>';\nfocusInput();\nfunction BTTInitialize() { loadData(); }\nfunction BTTWindowWillBecomeVisible() { focusInput(); }\nsetTimeout(loadData, 600);   // in case BTTInitialize is not called\n</script>\n</body>\n</html>\n",
+                "BTTMenuItemWebViewPlain": 0,
+                "BTTMenuItemWebViewFocusTextField": 1,
+                "BTTMenuItemKeepActiveInBackground": 0
+              }
+            }
+          ]
+        },
+        {
+          "BTTTriggerType": 643,
+          "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
+          "BTTTriggerName": "FRT Open Picker",
+          "BTTUUID": "C257A34A-7AB3-41D5-814A-DA966F2EDFA4",
+          "BTTEnabled": 1,
+          "BTTEnabled2": 1,
+          "BTTOrder": 3,
+          "BTTActionsToExecute": [
+            {
+              "BTTPredefinedActionType": 387,
+              "BTTPredefinedActionName": "Hide Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "02299DF4-C8AB-4FA1-A1B1-A4B5DCCB8ED0",
+                "BTTMenuActionMenuName": "Factorio Rich Text"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 0
+            },
+            {
+              "BTTPredefinedActionType": 281,
+              "BTTPredefinedActionName": "Run Core JavaScript",
+              "BTTAdditionalActionData": {
+                "BTTScriptType": 3,
+                "BTTAppleScriptUsePath": false,
+                "BTTScriptLocation": 0,
+                "BTTAppleScriptRunInBackground": true,
+                "BTTAppleScriptString": "// \"FRT Open Picker\" named trigger (Run Core JavaScript, function frtOpen).\n// Reads the picker config set by the main menu (variable frt_cfg), collects the icons and names\n// Factorio dumped into ~/Library/Application Support/factorio/script-output, stores them in the\n// variable frt_picker_data, then (re)opens the \"FRT Picker\" menu. Its web view page reads the variable.\nconst PICKER = {\"id\": \"AA1E1558-D457-48F4-BC2E-799A378CDC64\", \"name\": \"FRT Picker\"};   // {id, name}\n\nasync function frtOpen() {\n  const call = (fn, args) =>\n    typeof globalThis[fn] === \"function\" ? globalThis[fn](args) : callBTT(fn, args);\n  const REL = \"Library/Application Support/factorio/script-output\";\n\n  let cfg;\n  try { cfg = JSON.parse(await call(\"get_string_variable\", { variable_name: \"frt_cfg\" })); }\n  catch (e) { cfg = null; }\n  if (!cfg || !cfg.tag) cfg = { tag: \"item\", folders: [\"item\"], quality: true, img: false, template: \"[item=]\" };\n\n  const folders = cfg.folders.slice();\n  if (cfg.quality && folders.indexOf(\"quality\") < 0) folders.push(\"quality\");\n\n  const sh = [\n    'R=\"$HOME/' + REL + '\"',\n    \"printf '##H %s\\\\n' \\\"$HOME\\\"\",\n    \"for f in \" + folders.join(\" \") + \"; do\",\n    \"  printf '\\\\n##F %s\\\\n' \\\"$f\\\"\",\n    \"  if [ -d \\\"$R/$f\\\" ]; then ls -1 \\\"$R/$f\\\" | sed -n 's/\\\\.png$//p'; fi\",\n    \"  printf '\\\\n##L\\\\n'\",\n    \"  if [ -f \\\"$R/$f-locale.json\\\" ]; then cat \\\"$R/$f-locale.json\\\"; fi\",\n    \"done\",\n  ].join(\"\\n\");\n\n  let out = \"\";\n  try { out = String(await call(\"runShellScript\", { script: sh, launchPath: \"/bin/bash\", parameters: \"-c\" })); }\n  catch (e) { out = \"\"; }\n\n  let home = \"\";\n  const data = {};\n  let cur = null, mode = null, buf = [];\n  const flush = () => {\n    if (cur && mode === \"L\" && buf.join(\"\").trim()) {\n      try { data[cur].locale = JSON.parse(buf.join(\"\\n\")).names || {}; } catch (e) { /* ignore */ }\n    }\n    buf = [];\n  };\n  for (const line of out.split(\"\\n\")) {\n    if (line.indexOf(\"##H \") === 0) { home = line.slice(4).trim(); }\n    else if (line.indexOf(\"##F \") === 0) {\n      flush();\n      cur = line.slice(4).trim();\n      data[cur] = { names: [], locale: {} };\n      mode = \"F\";\n    } else if (line === \"##L\") { mode = \"L\"; buf = []; }\n    else if (cur && mode === \"F\") { if (line.trim()) data[cur].names.push(line.trim()); }\n    else if (cur && mode === \"L\") { buf.push(line); }\n  }\n  flush();\n\n  const clean = (s) => String(s).replace(/\\[[^\\]]*\\]/g, \"\").replace(/\\s+/g, \" \").trim();\n  const title = (f, n) => {\n    const l = data[f] && data[f].locale[n];\n    return (l && clean(l)) || n;\n  };\n\n  const entries = [];\n  for (const f of cfg.folders) {\n    if (!data[f]) continue;\n    for (const n of data[f].names) entries.push([f, n, title(f, n)]);\n  }\n  entries.sort((a, b) => a[2].localeCompare(b[2]));\n\n  let qualities = [];\n  if (cfg.quality && data.quality) {\n    const ORDER = [\"uncommon\", \"rare\", \"epic\", \"legendary\"];\n    const names = data.quality.names.filter((q) => q !== \"normal\" && q !== \"quality-unknown\");\n    names.sort((a, b) => {\n      const ia = ORDER.indexOf(a), ib = ORDER.indexOf(b);\n      if (ia >= 0 || ib >= 0) return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);\n      return a.localeCompare(b);\n    });\n    qualities = names.map((q) => [q, title(\"quality\", q)]);\n  }\n\n  const payload = {\n    tag: cfg.tag, img: !!cfg.img, quality: !!cfg.quality, template: cfg.template,\n    iconBase: \"localfile://\" + encodeURI(home + \"/\" + REL + \"/\"),\n    entries, qualities,\n  };\n  await call(\"set_string_variable\", { variable_name: \"frt_picker_data\", to: JSON.stringify(payload) });\n\n  const menuAction = (type, extra) => ({ json: JSON.stringify({\n    BTTPredefinedActionType: type,\n    BTTAdditionalActionData: Object.assign({ BTTMenuActionMenuID: PICKER.id, BTTMenuActionMenuName: PICKER.name }, extra),\n  }) });\n  await call(\"trigger_action\", menuAction(387, {}));    // hide first so the web view reloads with the new data\n  await call(\"trigger_action\", menuAction(386, { BTTMenuActionActivateKeyboardFocus: 2, BTTMenuActionRestorePosition: true }));\n  return \"ok\";\n}\n",
+                "BTTScriptFunctionToCall": "frtOpen"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 1
+            }
+          ]
+        },
+        {
+          "BTTTriggerType": 643,
+          "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
+          "BTTTriggerName": "FRT Paste",
+          "BTTUUID": "21903418-CA27-4C20-97BE-74D8178F3A4B",
+          "BTTEnabled": 1,
+          "BTTEnabled2": 1,
+          "BTTOrder": 4,
+          "BTTActionsToExecute": [
+            {
+              "BTTPredefinedActionType": 387,
+              "BTTPredefinedActionName": "Hide Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "02299DF4-C8AB-4FA1-A1B1-A4B5DCCB8ED0",
+                "BTTMenuActionMenuName": "Factorio Rich Text"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 0
+            },
+            {
+              "BTTPredefinedActionType": 387,
+              "BTTPredefinedActionName": "Hide Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "AA1E1558-D457-48F4-BC2E-799A378CDC64",
+                "BTTMenuActionMenuName": "FRT Picker"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 1
+            },
+            {
+              "BTTPredefinedActionType": 345,
+              "BTTPredefinedActionName": "Delay (Async / Non-Blocking)",
+              "BTTDelayNextActionBy": 0.15,
+              "BTTEnabled": 1,
+              "BTTOrder": 2
+            },
+            {
+              "BTTPredefinedActionType": 281,
+              "BTTPredefinedActionName": "Run Core JavaScript",
+              "BTTAdditionalActionData": {
+                "BTTScriptType": 3,
+                "BTTAppleScriptUsePath": false,
+                "BTTScriptLocation": 0,
+                "BTTAppleScriptRunInBackground": true,
+                "BTTAppleScriptString": "async function frtPaste() {\n  const call = (fn, args) =>\n    typeof globalThis[fn] === \"function\" ? globalThis[fn](args) : callBTT(fn, args);\n  const text = String((await call(\"get_string_variable\", { variable_name: \"frt_paste\" })) || \"\");\n  const left = parseInt(String((await call(\"get_string_variable\", { variable_name: \"frt_left\" })) || \"0\"), 10) || 0;\n  if (!text) return \"nothing to paste\";\n  const args = { text: text, insert_by_pasting: true };\n  if (left > 0) args.move_cursor_left_by_x_after_pasting = left;\n  await call(\"paste_text\", args);\n  return \"ok\";\n}\n",
+                "BTTScriptFunctionToCall": "frtPaste"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 3
+            }
+          ]
+        },
+        {
+          "BTTTriggerType": 643,
+          "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
+          "BTTTriggerName": "FRT Close",
+          "BTTUUID": "C9D7C6A4-8066-4D44-9DE9-7428D60CA979",
+          "BTTEnabled": 1,
+          "BTTEnabled2": 1,
+          "BTTOrder": 5,
+          "BTTActionsToExecute": [
+            {
+              "BTTPredefinedActionType": 387,
+              "BTTPredefinedActionName": "Hide Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "02299DF4-C8AB-4FA1-A1B1-A4B5DCCB8ED0",
+                "BTTMenuActionMenuName": "Factorio Rich Text"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 0
+            },
+            {
+              "BTTPredefinedActionType": 387,
+              "BTTPredefinedActionName": "Hide Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "AA1E1558-D457-48F4-BC2E-799A378CDC64",
+                "BTTMenuActionMenuName": "FRT Picker"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 1
+            }
+          ]
+        },
+        {
+          "BTTTriggerType": 643,
+          "BTTTriggerClass": "BTTTriggerTypeOtherTriggers",
+          "BTTTriggerName": "FRT Back",
+          "BTTUUID": "7E7FB149-3B96-48A0-9BF6-E9846FEE6EC0",
+          "BTTEnabled": 1,
+          "BTTEnabled2": 1,
+          "BTTOrder": 6,
+          "BTTActionsToExecute": [
+            {
+              "BTTPredefinedActionType": 387,
+              "BTTPredefinedActionName": "Hide Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "AA1E1558-D457-48F4-BC2E-799A378CDC64",
+                "BTTMenuActionMenuName": "FRT Picker"
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 0
+            },
+            {
+              "BTTPredefinedActionType": 386,
+              "BTTPredefinedActionName": "Show Floating Menu",
+              "BTTAdditionalActionData": {
+                "BTTMenuActionMenuID": "02299DF4-C8AB-4FA1-A1B1-A4B5DCCB8ED0",
+                "BTTMenuActionMenuName": "Factorio Rich Text",
+                "BTTMenuActionActivateKeyboardFocus": 2,
+                "BTTMenuActionRestorePosition": true
+              },
+              "BTTEnabled": 1,
+              "BTTOrder": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas": []
+}
